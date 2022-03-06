@@ -11,17 +11,18 @@ function HeroImage({ image, title, videoSrc,eventBlock }) {
                <Text>
                <h1>{title}</h1>
                </Text>
-               <Video>
+               {videoSrc && <Video>
                   <video controls>
                   <source src={videoSrc} type="video/mp4"/>
                </video>
-               </Video>
+               </Video>}
+               
             </ContentItem>
+            {eventBlock && <Register>
+               <p>{eventBlock?.title}</p>
+               <Link to={eventBlock?.url}>{eventBlock?.text}</Link>
+            </Register>}
             
-            <Register>
-               <p>{eventBlock.title}</p>
-               <Link to={eventBlock.url}>{eventBlock.text}</Link>
-            </Register>
          </Content>
          
       </Wrapper>

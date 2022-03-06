@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
    background-size: 100%, cover;
    background-position: center;
    background-repeat: no-repeat;
-   min-height: 100vh;
+   height: 100vh;
 `;
 
 export const Content = styled.div`

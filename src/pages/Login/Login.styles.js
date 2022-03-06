@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  width: 100%;
+  position: absolute;
+  top:0;
+  background-color: #1F1F1F;
+  height: 100vh;
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  // min-height: 100vh;
 `;
 export const Content = styled.div`
   width: 100%;

@@ -79,7 +79,7 @@ function Login() {
                 <Error>{errorMsg}</Error>
               )}
             <ForgotPass>
-              <Link to='/forgot'>Forgot your password?</Link>
+              <Link to='/forgot-password'>Forgot your password?</Link>
             </ForgotPass>
 
             <button type='submit' value='submit'>

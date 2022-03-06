@@ -2,13 +2,17 @@ import styled from "styled-components";
 
 
 export const HeaderWrapper = styled.header`
-  position: absolute;
-  width: 100%;
+  &.home-header {
+    position: absolute;
+    width: 100%;
+  }
+  
 `;
 export const NavContainer = styled.nav`
 
 
   .nav-center {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
 import { FaBars,FaAngleUp, FaSignOutAlt} from 'react-icons/fa';
-
 
 // Img
 import logo from '../../assets/img/logo.png';
@@ -11,13 +10,15 @@ import { HeaderWrapper, NavContainer } from './Header.styles';
 import { links, linksBurger } from '../../utils/constant';
 
 function Header() {
+  const location = useLocation()
+  const headerLocation = location.pathname === '/' ? true : false
 
   const [showDrop,setShowDrop] = useState(false)
   const handlerShow = () => {
     setShowDrop(!showDrop)
   }
   return (
-    <HeaderWrapper>
+    <HeaderWrapper className={headerLocation ? 'home-header' : null}>
       <NavContainer className='main-container '>
         <div className='nav-center'>
           <div className='nav-header'>

@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
-
+import { normalize } from 'styled-normalize'
 
 export const GlobalStyle = createGlobalStyle`
-  @import-normalize
+  ${normalize}
   * {
     box-sizing: border-box;
   }
@@ -29,5 +29,21 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
     max-width: 1480px;
     padding: 20px;
+  }
+  .btn-primary {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    background-color: #f39200;
+    border: none;
+    font-size: 31px;
+    line-height: 40px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px 0;
+    a {
+      color:inherit
+    }
   }
 `;
